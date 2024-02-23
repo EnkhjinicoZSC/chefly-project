@@ -1,29 +1,17 @@
-# README #
+# Capstone Project
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This GitHub repo serves as a codebase for my final year capstone project, which is a web app platform for connecting chefs with customers. Users are able to find chefs based on their preferences with the help of a recommendation system and request chefs at a proposed time based on the availabilities of chefs. Chefs as users are able to accept or decline the request. 
 
-### What is this repository for? ###
+Frameworks: Django and React
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+## To initialize:
 
-### How do I get set up? ###
+```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    pip3 install -r requirements.txt
+```
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+**To run the app:** `python3 manage.py runserver`
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+And then the server is running up on the local host: `http://127.0.0.1:8000/`

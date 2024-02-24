@@ -1,29 +1,17 @@
 {% extends 'customer/base.html' %}
 
 {% block content %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Belleza&display=swap"
-      rel="stylesheet"
-    />
-    <link href="static/css/main.css" rel="stylesheet" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="v1_58">
-        <div class="v1_59">
-        <span class="v1_9"
-            >A Platform To Request for Chefs and Catering Services</span
-        >
-        <div class="v1_10"></div>
-        <div class="v1_13">
-            <div class="v1_11"></div>
-            <a class="v1_12" href="{% url 'menu' %}">Book now</a>
-        </div>
+<div  class="container mb-5">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-10 col-sm-12 offset-md-1 p-4 text-center">
+            <h1> A Platform To Request For Chefs and Catering Services</h1>
         </div>
     </div>
-  </body>
-</html>
+    <div class="row justify-content-center mt-1">
+        <div class="card col-md-5 col-sm-12 offset-md-1 p-4 text-center">
+            <h2>Make your request!</h2>
+            <a href="{% url 'request' %}" class="btn btn-outline-primary">Request Now!</a>
+        </div>
+    </div>
+</div>
 {% endblock content %}

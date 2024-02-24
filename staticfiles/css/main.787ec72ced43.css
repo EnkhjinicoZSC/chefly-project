@@ -1,0 +1,70 @@
+.step-number {
+  color: #FEECA4;
+  text-align: center;
+  font-family: 'Candal', sans-serif; /* Make sure you have this font available */
+  font-size: 250px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.steps-section {
+  overflow: hidden;
+}
+.hero-section {
+  margin-top: 40px;
+}
+.request-section {
+  color: #000;
+  font-family: Belleza;
+  font-size: 405x;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.imageTop{
+  border-radius: 0px 20px 20px 0px;
+  margin-right: 10px;
+  max-width: 90%;
+}
+
+.book-button{
+  border-radius: 5px;
+  border: 0.5px solid #000;
+  background: #FFF;
+  padding: 10px 40px 10px 40px;
+  color: black;
+}
+.cuisine{
+  border-radius: 20px;
+  width: 500px;
+  height: 500px;
+}
+.cuisine-text{
+  color: #000;
+  text-align: center;
+  font-family: Belleza;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.step-text{
+  color: #000;
+  text-align: center;
+  font-family: Belleza;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.more-button {
+  border-radius: 5px;
+  border: 0.5px solid #000;
+  background: #FFF;
+  padding: 10px 60px 10px 60px;
+  color: black;
+  font-size:30px;
+}

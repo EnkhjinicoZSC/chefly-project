@@ -1,29 +1,88 @@
-{% extends 'customer/base.html' %}
-
+{% include 'customer/base.html' %}
 {% block content %}
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Belleza&display=swap"
-      rel="stylesheet"
-    />
-    <link href="static/css/main.css" rel="stylesheet" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="v1_58">
-        <div class="v1_59">
-        <span class="v1_9"
-            >A Platform To Request for Chefs and Catering Services</span
-        >
-        <div class="v1_10"></div>
-        <div class="v1_13">
-            <div class="v1_11"></div>
-            <a class="v1_12" href="{% url 'menu' %}">Book now</a>
-        </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Platform</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container-fliud">
+        <div class="row align-items-center">
+            <!-- Image Column -->
+            <div class="col-md-6">   
+                <img src="/static/images/v1_10.png" alt="Chefs preparing food" class="img-fluid imageTop">
+            </div>
+            <!-- Text Column -->
+            <div class="col-md-6">
+                <h1 class="display-6 request-section">A Platform To Request for Chefs and Catering Services</h1>
+                <a href="{% url 'request' %}" class="book-button">Book now</a>
+            </div>
         </div>
     </div>
-  </body>
+</section>
+
+<!-- Steps Section -->
+<section class="steps-section text-center my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="step-number">1</div>
+                <p class="step-text">Make a booking on our platform</p>
+            </div>
+            <div class="col-md-3">
+                <div class="step-number">2</div>
+                <p class="step-text">Confirm your payment</p>
+            </div>
+            <div class="col-md-3">
+                <div class="step-number">3</div>
+                <p class="step-text">Our Chef will contact you</p>
+            </div>
+            <div class="col-md-3">
+                <div class="step-number">4</div>
+                <p class="step-text">We will come at your doorstep!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cuisines Section -->
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/static/images/italian.png" alt="Italian Cuisine" class="img-fluid cuisine">
+                <h3 class="cuisine-text">Italian Cuisine</h3>
+            </div>
+            <div class="col-md-6">
+                <img src="/static/images/japanese.png" alt="Japanese Cuisine" class="img-fluid cuisine">
+                <h3 class="cuisine-text">Japanese Cuisine</h3>
+            </div>
+            <div class="col-md-6">
+                <img src="/static/images/mexican.png" alt="Mexican Cuisine" class="img-fluid cuisine">
+                <h3 class="cuisine-text">Mexican Cuisine</h3>
+            </div>
+            <div class="col-md-6">
+                <img src="/static/images/indian.png" alt="Indian Cuisine" class="img-fluid cuisine">
+                <h3 class="cuisine-text">Indian Cuisine</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
 </html>
+    
 {% endblock content %}
+

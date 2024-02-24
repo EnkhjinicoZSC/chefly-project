@@ -1,86 +1,70 @@
-* {
-  box-sizing: border-box;
+.step-number {
+  color: #FEECA4;
+  text-align: center;
+  font-family: 'Candal', sans-serif; /* Make sure you have this font available */
+  font-size: 250px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-body {
-  font-size: 14px;
-}
-.v1_59 {
-  width: 100%;
-  height: 533px;
-  background: url("../images/v1_59.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
+.steps-section {
   overflow: hidden;
 }
-.v1_9 {
-  width: 691px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 157px;
-  left: 841px;
+.hero-section {
+  margin-top: 40px;
+}
+.request-section {
+  color: #000;
   font-family: Belleza;
-  font-weight: Regular;
-  font-size: 55px;
-  opacity: 1;
-  text-align: left;
+  font-size: 405x;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
 }
-.v1_10 {
-  width: 732px;
-  height: 533px;
-  background: url("../images/v1_10.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  overflow: hidden;
+.imageTop{
+  border-radius: 0px 20px 20px 0px;
+  margin-right: 10px;
+  max-width: 90%;
 }
-.v1_13 {
-  width: 270px;
-  height: 70px;
-  background: url("../images/v1_13.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 353px;
-  left: 841px;
-  overflow: hidden;
+
+.book-button{
+  border-radius: 5px;
+  border: 0.5px solid #000;
+  background: #FFF;
+  padding: 10px 40px 10px 40px;
+  color: black;
 }
-.v1_11 {
-  width: 270px;
-  height: 70px;
-  background: rgba(255,255,255,1);
-  opacity: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  border: 0.5px solid rgba(0,0,0,1);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
+.cuisine{
+  border-radius: 20px;
+  width: 500px;
+  height: 500px;
 }
-.v1_12 {
-  width: 143px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 15px;
-  left: 63px;
+.cuisine-text{
+  color: #000;
+  text-align: center;
   font-family: Belleza;
-  font-weight: Regular;
-  font-size: 35px;
-  opacity: 1;
-  text-align: left;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.step-text{
+  color: #000;
+  text-align: center;
+  font-family: Belleza;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.more-button {
+  border-radius: 5px;
+  border: 0.5px solid #000;
+  background: #FFF;
+  padding: 10px 60px 10px 60px;
+  color: black;
+  font-size:30px;
 }

@@ -1,0 +1,9 @@
+ .navbar {
+      background-color: #fff; /* Change this if you have a specific hex color for the navbar background */
+}
+.navbar-brand, .nav-link {
+    color: #000 !important; 
+}
+.nav-item:not(:last-child) {
+    margin-right: 1rem; 
+}

@@ -15,3 +15,5 @@ Frameworks: Django and React
 **To run the app:** `python3 manage.py runserver`
 
 And then the server is running up on the local host: `http://127.0.0.1:8000/`
+
+To access the website on the hosted server: `https://chefly-6ecd833b2c9e.herokuapp.com/`

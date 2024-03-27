@@ -44,7 +44,7 @@
                             <td>{{ order.state }}</td>
                             <td>{{ order.zip_code }}</td>
                             <td>
-                                {% if order.is_paid %}
+                                {% if order.is_shipped %}
                                 <i style="color: green;" class="fas fa-check"></i>
                                 {% else %}
                                 <i style="color: red;" class="fas fa-times"></i>

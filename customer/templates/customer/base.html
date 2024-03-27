@@ -28,5 +28,52 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        
+        const form = document.getElementById('chef-selection-form');
+        const checkboxes = document.querySelectorAll('input[type="checkbox"][name="items[]"]');
+        const errorMessage = document.getElementById('chef-selection-error');
+    
+        form.addEventListener('submit', function (event) {
+
+            console.log("submit")
+    
+            const isAnyChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+            if (!isAnyChecked) {
+                event.preventDefault(); // Stop form submission
+                errorMessage.classList.remove('d-none'); // Show error message
+            } else {
+                errorMessage.classList.add('d-none'); // Hide error message on successful validation
+            }
+        });
+    });
+</script> -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('chef-selection-form');
+        const submitButton = document.querySelector('[data-target="#submitModal"]'); // The button that triggers the modal
+        const checkboxes = document.querySelectorAll('input[type="checkbox"][name="items[]"]');
+        const errorMessage = document.getElementById('chef-selection-error');
+    
+        // Listen for click event on the submit button instead of form submit
+        submitButton.addEventListener('click', function (event) {
+            const isAnyChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+            if (!isAnyChecked) {
+                event.preventDefault(); // Prevent the modal from showing
+                errorMessage.classList.remove('d-none'); // Show error message
+                // Optionally, hide the modal if it was already open
+                $('#submitModal').modal('hide');
+            } else {
+                errorMessage.classList.add('d-none'); // Ensure error message is hidden
+                // Show the modal only if at least one checkbox is checked
+                $('#submitModal').modal('show');
+            }
+        });
+    });
+</script>
+
 </body>
 </html>

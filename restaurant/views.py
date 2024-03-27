@@ -19,8 +19,8 @@ class Dashboard(LoginRequiredMixin, UserPassesTestMixin, View):
         for order in orders:
             total_revenue += order.price 
             
-            if not order.is_shipped:
-                unshipped_orders.append(order)
+            #if not order.is_shipped:
+            unshipped_orders.append(order)
 
         # pass total number of orders and total revenue into template
         context = {

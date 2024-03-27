@@ -47,6 +47,8 @@ class Request(View):
         }
         items = request.POST.getlist('items[]')
          
+        price = 0
+        item_ids = []
         for item in items:
             menu_item = MenuItem.objects.get(pk__contains=int(item))
             item_data = {
@@ -54,11 +56,8 @@ class Request(View):
                 'name': menu_item.name,
                 'price': menu_item.price
             }
-            
-            order_items['items'].append(item_data)
 
-            price = 0
-            item_ids = []
+            order_items['items'].append(item_data)
             
         for item in order_items['items']:
             price += item['price']

@@ -79,3 +79,18 @@
   margin-bottom: 5rem; /* Adjust the value as needed */
 }
 
+/* Custom styles for carousel control icons */
+.cuisine-carousel .carousel-control-prev-icon,
+.cuisine-carousel .carousel-control-next-icon {
+    width: 70px; /* Further increase width */
+    height: 70px; /* Further increase height */
+    background-size: 100%, 100%; /* Keep background size to prevent blurriness */
+    filter: invert(80%); /* Make icons white */
+}
+
+/* Adjust clickable area's width for easier interaction */
+.cuisine-carousel .carousel-control-prev,
+.cuisine-carousel .carousel-control-next {
+    width: 15%; /* Increase if necessary */
+}
+

@@ -79,7 +79,8 @@
   margin-bottom: 5rem; /* Adjust the value as needed */
 }
 
-/* Custom styles for carousel control icons */
+
+
 .cuisine-carousel .carousel-control-prev-icon,
 .cuisine-carousel .carousel-control-next-icon {
     width: 70px; /* Further increase width */
@@ -88,9 +89,35 @@
     filter: invert(80%); /* Make icons white */
 }
 
-/* Adjust clickable area's width for easier interaction */
+
 .cuisine-carousel .carousel-control-prev,
 .cuisine-carousel .carousel-control-next {
     width: 15%; /* Increase if necessary */
 }
 
+.card .chef-image, .modal-body .chef-image {
+  width: 100%;  
+  height: 200px; 
+  object-fit: cover; 
+}
+
+/* Custom styles for chef cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .btn {
+  margin-top: auto; /* Pushes the button to the bottom of the card */
+}
+
+.chef-card {
+  min-height: 200px; /* Adjust based on your content for uniformity */
+}

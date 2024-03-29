@@ -8,7 +8,7 @@
             <p>Learn more about the culinary masters behind our exquisite menu. Our chefs come from diverse backgrounds, bringing unique flavors and experiences to every dish they create.</p>
         </div>
         <div class="col-md-6">
-            <img src="/static/images/v1_78.png" alt="Our Chefs" class="img-fluid rounded">
+            <img src="/static/images/v1_78.png" alt="Our Chefs" class="img-fluid rounded chef-image">
         </div>
     </div>
 
@@ -27,10 +27,10 @@
     {% for item in menu_items %}
         <!-- Each card takes up half of the row on medium devices -->
         <div class="col-md-6 mb-4">
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3 chef-card" style="max-width: 540px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="{{ item.image.url }}" alt="{{ item.name }}" class="img-fluid rounded">
+                        <img src="{{ item.image.url }}" alt="{{ item.name }}" class="img-fluid rounded chef-image">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -59,7 +59,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img src="{{ item.image.url }}" alt="{{ item.name }}" class="img-fluid rounded mb-3">
+                        <img src="{{ item.image.url }}" alt="{{ item.name }}" class="img-fluid rounded mb-3 chef-image">
                         <p>{{ item.description }}</p>
                     </div>
                     <div class="modal-footer">

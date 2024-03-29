@@ -68,3 +68,14 @@
   color: black;
   font-size:30px;
 }
+
+.carousel-item img {
+  width: 100%; /* Makes image responsive */
+  max-height: 500px; /* Adjust this value to suit your needs */
+  object-fit: cover; /* This ensures the aspect ratio is maintained while covering the area */
+}
+
+.section-my-5 {
+  margin-bottom: 5rem; /* Adjust the value as needed */
+}
+

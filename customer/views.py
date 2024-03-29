@@ -3,7 +3,8 @@ from django.shortcuts import render, redirect
 from django.views import View
 from django.db.models import Q
 from django.core.mail import send_mail
-from .models import MenuItem, Category, RequestModel
+from .models import MenuItem, Category, RequestModel, Feedback
+from django.contrib import messages
 
 class Index(View):
     def get(self, request, *args, **kwargs):
@@ -148,3 +149,20 @@ class MenuSearch(View):
         }
 
         return render(request, 'customer/menu.html', context)
+    
+    
+def submit_feedback(request):
+    if request.method == 'POST':
+        name = request.POST.get('customerName')
+        email = request.POST.get('customerEmail')
+        message = request.POST.get('chefFeedback')
+
+        # Save the feedback to the database
+        Feedback.objects.create(name=name, email=email, message=message)
+
+        # Optionally, add a message to be displayed to the user
+        messages.success(request, 'Your feedback has been submitted successfully!')
+
+        return redirect('index')  # Redirect to a new URL
+
+    return render(request, 'feedback_form.html') 

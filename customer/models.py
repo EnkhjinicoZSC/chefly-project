@@ -32,3 +32,12 @@ class RequestModel(models.Model):
     
     def __str__(self):
         return f'Request: {self.created_on.strftime("%b %d %I: %M")}'
+    
+    
+class Feedback(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    message = models.TextField()
+
+    def __str__(self):
+        return f"Feedback from {self.name}"

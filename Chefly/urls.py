@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from customer.views import Index, About, Request, OrderConfirmation, OrderPayConfirmation, Menu, MenuSearch
+from customer.views import Index, About, Request, OrderConfirmation, OrderPayConfirmation, Menu, MenuSearch, submit_feedback
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,4 +30,5 @@ urlpatterns = [
     path('request/', Request.as_view(), name='request'),
     path('request-confirmation/<int:pk>', OrderConfirmation.as_view(), name='order-confirmation'),
     path('payment-confirmation/', OrderPayConfirmation.as_view(), name='payment-confirmation'),
+    path('submit-feedback/', submit_feedback, name='feedback_url'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

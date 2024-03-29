@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import MenuItem, Category, RequestModel
+from .models import MenuItem, Category, RequestModel, Feedback
 
 admin.site.register(MenuItem)
 admin.site.register(Category)
 admin.site.register(RequestModel)
+admin.site.register(Feedback)
